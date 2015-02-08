@@ -17,5 +17,5 @@ with(subset(df3, df3$Sub_metering_3==df3$Sub_metering_3, select=c(Dati, Sub_mete
 
 plot(df3$Dati, df3$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 
-dev.copy(png, file = "plot4.png")
+dev.copy(png, file = "plot4.png", width = 480, height = 480)
 dev.off()

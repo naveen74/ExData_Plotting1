@@ -10,5 +10,5 @@ with(df2, plot(df2$Dati, df2$Sub_metering_1, type = "n", ylab = "Energy sub mete
 with(subset(df2, df2$Sub_metering_1==df2$Sub_metering_1, select=c(Dati, Sub_metering_1)), lines(Dati, df2$Sub_metering_1))
 with(subset(df2, df2$Sub_metering_2==df2$Sub_metering_2, select=c(Dati, Sub_metering_2)), lines(Dati, df2$Sub_metering_2, col = "Red"))
 with(subset(df2, df2$Sub_metering_3==df2$Sub_metering_3, select=c(Dati, Sub_metering_3)), lines(Dati, df2$Sub_metering_3, col = "Blue"))
-dev.copy(png, file = "plot3.png")
+dev.copy(png, file = "plot3.png", width = 480, height = 480)
 dev.off()
